@@ -1,0 +1,3 @@
+.\.venv\Scripts\Activate.ps1
+
+D:\Users\Rafael\Documents\GitHub\time-series-forecasting-pytorch\.venv\Scripts\Activate.ps1

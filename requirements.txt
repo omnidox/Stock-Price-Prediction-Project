@@ -1,0 +1,11 @@
+numpy
+pandas
+torch
+matplotlib
+seaborn
+plotly
+plotly-express
+scikit-learn
+statsmodels
+alpha_vantage
+pyarrow
