@@ -2,5 +2,5 @@ The current issue with the 7 day forecast is the following
 
 -Dates are not updated into the graph. Can I integrate dates into the training?
 
--The dinal 7 predictions to the 7 day forecast seems to be missing. Could that be an issue with how the 
+-The final 7 predictions to the 7 day forecast seems to be missing. Could that be an issue with how the 
 data is split and divided? 
