@@ -21,6 +21,9 @@ I only properly recorded the days for seven days ahead. How do i account foe thi
 9. Im thinking that the implementation in which only the seventh day variable is predicted might be more accurate than its 7 day
 individual implementation. 
 
+10. I just Realized!, is the training happening to all seven dates? That could explain the odd skewing thats occuring
+if the training is happening on one date. 
+
 ---------
 
 Solutions
