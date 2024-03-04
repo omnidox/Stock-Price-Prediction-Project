@@ -1,6 +1,36 @@
-The current issue with the 7 day forecast is the following
+Problems
 
--Dates are not updated into the graph. Can I integrate dates into the training?
+1. The current issue with the 7 day forecast is the following
 
--The final 7 predictions to the 7 day forecast seems to be missing. Could that be an issue with how the 
+2. Dates are not updated into the graph. Can I integrate dates into the training?
+
+3. The final 7 predictions to the 7 day forecast seems to be missing. Could that be an issue with how the 
 data is split and divided? 
+
+4. One consideration I didn't think of. I have it configured so that a time series of 20 is used to predict 1 to 7 days ahead. 
+I only properly recorded the days for seven days ahead. How do i account foe this in the other days? 
+
+5. I need to see how dates are handled considering that each prediction has seven dates, ranging from 1 to seven days into the future. 
+
+6. Im sure the dates are incorrect due to this seven day b.s.
+
+7. How is mean suared error calcualted. Will ask chat gpt about this. --> done
+
+8. Can i calcualte RMSE for all seven days?
+
+---------
+
+Solutions
+
+1. before i solve problem 3, let's see if i can put the dates appropriately into the graph. Then i will go about solving problem
+2 to solve the last values of the graph.
+
+2a. To solve the issue between problems 4 to 6, I need to record the dates for 7 outcomes ranging from 1 to 7. 
+I'm thinking maybe i need to apply data structures of data structures. 
+One data structure will house the last day of the look back sequence, and then conncected to that date, would be the following 
+seven predicted dates. 
+
+2b. First, lets ask chatgpt to see what solution it should implement by pasting the function, and bringing up the fact that only the 
+final of the seven dates are being recorded. If it doesn't make something good, then i will apply 2c.
+
+2c. Have chatgpt apply the solution from 2a. 
