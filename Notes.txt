@@ -16,7 +16,10 @@ I only properly recorded the days for seven days ahead. How do i account foe thi
 
 7. How is mean suared error calcualted. Will ask chat gpt about this. --> done
 
-8. Can i calcualte RMSE for all seven days?
+8. Can i calcualte RMSE for all seven days? --> done 
+
+9. Im thinking that the implementation in which only the seventh day variable is predicted might be more accurate than its 7 day
+individual implementation. 
 
 ---------
 
