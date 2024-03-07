@@ -1,18 +1,18 @@
 Problems
 
-1. The current issue with the 7 day forecast is the following
+1. The current issue with the 7 day forecast is the following--> General
 
-2. Dates are not updated into the graph. Can I integrate dates into the training?
+2. Dates are not updated into the graph. Can I integrate dates into the training? --> Done
 
 3. The final 7 predictions to the 7 day forecast seems to be missing. Could that be an issue with how the 
 data is split and divided? 
 
 4. One consideration I didn't think of. I have it configured so that a time series of 20 is used to predict 1 to 7 days ahead. 
-I only properly recorded the days for seven days ahead. How do i account foe this in the other days? 
+I only properly recorded the days for seven days ahead. How do i account foe this in the other days? --> Done
 
-5. I need to see how dates are handled considering that each prediction has seven dates, ranging from 1 to seven days into the future. 
+5. I need to see how dates are handled considering that each prediction has seven dates, ranging from 1 to seven days into the future. -->Done
 
-6. Im sure the dates are incorrect due to this seven day b.s.
+6. Im sure the dates are incorrect due to this seven day b.s.--> Done
 
 7. How is mean suared error calcualted. Will ask chat gpt about this. --> done
 
@@ -24,19 +24,26 @@ individual implementation.
 10. I just Realized!, is the training happening to all seven dates? That could explain the odd skewing thats occuring
 if the training is happening on one date. 
 
+11. Need to compare the single date trained model with the multiple date trained model. This should be interesting.
+
 ---------
 
 Solutions
 
 1. before i solve problem 3, let's see if i can put the dates appropriately into the graph. Then i will go about solving problem
-2 to solve the last values of the graph.
+2 to solve the last values of the graph.--> Done
 
 2a. To solve the issue between problems 4 to 6, I need to record the dates for 7 outcomes ranging from 1 to 7. 
-I'm thinking maybe i need to apply data structures of data structures. 
+I'm thinking maybe i need to apply data structures of data structures. --> List of lists
 One data structure will house the last day of the look back sequence, and then conncected to that date, would be the following 
-seven predicted dates. 
+seven predicted dates. --> instead of indexed by dates, it's just indexed by the proper date amounts.--> Done
 
 2b. First, lets ask chatgpt to see what solution it should implement by pasting the function, and bringing up the fact that only the 
-final of the seven dates are being recorded. If it doesn't make something good, then i will apply 2c.
+final of the seven dates are being recorded. If it doesn't make something good, then i will apply 2c.--> Done
 
-2c. Have chatgpt apply the solution from 2a. 
+2c. Have chatgpt apply the solution from 2a. -->Done
+
+3a. I will now attempt to resolve problems 9 and 10 by training on dates individually. First training day 7. And then seeing if the accuracy is much better.
+
+3b. a solution i'm considering is altering the function so that i can put in a forcast number and it will output exlcusively data 
+and dates accordingly. --> Done
