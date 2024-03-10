@@ -5,10 +5,11 @@ Problems
 2. Dates are not updated into the graph. Can I integrate dates into the training? --> Done
 
 3. The final 7 predictions to the 7 day forecast seems to be missing. Could that be an issue with how the 
-data is split and divided? 
+data is split and divided? --> Done, applying the dates with the graph helped resolve this issue.
 
 4. One consideration I didn't think of. I have it configured so that a time series of 20 is used to predict 1 to 7 days ahead. 
-I only properly recorded the days for seven days ahead. How do i account foe this in the other days? --> Done
+I only properly recorded the days for seven days ahead. How do i account foe this in the other days? --> Done, will now compare a 7 day prediction
+vs a 7th day prediction
 
 5. I need to see how dates are handled considering that each prediction has seven dates, ranging from 1 to seven days into the future. -->Done
 
@@ -19,12 +20,16 @@ I only properly recorded the days for seven days ahead. How do i account foe thi
 8. Can i calcualte RMSE for all seven days? --> done 
 
 9. Im thinking that the implementation in which only the seventh day variable is predicted might be more accurate than its 7 day
-individual implementation. 
+individual implementation.--> done, early testing seems to indicate that both solution are not predicting well enough for profit. 
 
 10. I just Realized!, is the training happening to all seven dates? That could explain the odd skewing thats occuring
-if the training is happening on one date. 
+if the training is happening on one date. --> done, the skewing was the result of different size graphs appearing to have skewed.
 
-11. Need to compare the single date trained model with the multiple date trained model. This should be interesting.
+11. Need to compare the single date trained model with the multiple date trained model. This should be interesting.--> Done, not much difference. 
+
+12. Now we need to see how i can improve the lag between 7 day predictions and the original values. Options to include is either 
+hyperparameter optimization or/and using a different types of recurrent neural network. Perhaps look into alternative machine learning paradigms
+such as LSTM and Transformers and models with attention mechanisms. 
 
 ---------
 
@@ -43,7 +48,8 @@ final of the seven dates are being recorded. If it doesn't make something good, 
 
 2c. Have chatgpt apply the solution from 2a. -->Done
 
-3a. I will now attempt to resolve problems 9 and 10 by training on dates individually. First training day 7. And then seeing if the accuracy is much better.
+3a. I will now attempt to resolve problems 9 and 10 by training on dates individually. 
+First training day 7. And then seeing if the accuracy is much better.--> Done
 
 3b. a solution i'm considering is altering the function so that i can put in a forcast number and it will output exlcusively data 
 and dates accordingly. --> Done
